@@ -1,0 +1,20 @@
+{
+  "command": {
+    "publish": {
+      "ignoreChanges": ["ignored-file", "*.md"],
+      "message": "chore(release): publish"
+    },
+    "bootstrap": {
+      "ignore": "",
+      "npmClientArgs": ["--frozen-lockfile"]
+    },
+    "version": {
+      "allowBranch": "vue2"
+    }
+  },
+  "npmClient": "yarn",
+  "packages": [
+    "packages/*"
+  ],
+  "version": "independent"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "documentation of vue2=google-maps",
+  "main": "index.js",
+  "author": "Diego A. Zapata Hantsch",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "dependencies": {
+    "vuepress": "^1.2.0"
+  }
+}
