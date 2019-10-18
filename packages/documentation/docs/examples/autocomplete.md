@@ -1,3 +1,4 @@
+```html
 <body>
   <div id="root">
     <h1>Autocomplete Example (#164)</h1>
@@ -62,3 +63,4 @@
   </script>
 
 </body>
+```

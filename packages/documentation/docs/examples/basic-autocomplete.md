@@ -1,3 +1,4 @@
+```html
 <body>
   <div id="root">
     <h1>Changing Default Place updates text box</h1>
@@ -67,3 +68,4 @@
   </script>
 
 </body>
+```

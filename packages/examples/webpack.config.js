@@ -4,36 +4,27 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 // Write out the list of examples to the examples index
 const examplesDir = path.resolve(__dirname, 'components')
-const examplesIndex = fs.readdirSync(
-  examplesDir
-)
+const examplesIndex = fs.readdirSync(examplesDir)
   .filter(f => f.endsWith('.vue'))
   .map(f => {
     const baseFileName = path.basename(f, '.vue')
 
     return `
-import E${baseFileName}_Source from ${JSON.stringify(`!!raw-loader!${examplesDir}/${f}`)}
-import E${baseFileName}_Module from ${JSON.stringify(`${examplesDir}/${f}`)}
+      import E${baseFileName}_Source from ${JSON.stringify(`!!raw-loader!${examplesDir}/${f}`)}
+      import E${baseFileName}_Module from ${JSON.stringify(`${examplesDir}/${f}`)}
 
-examples.push({
-  name: ${JSON.stringify(baseFileName)},
-  module: E${baseFileName}_Module,
-  source: E${baseFileName}_Source,
-  description: E${baseFileName}_Module.description,
-})
-    `
+      examples.push({
+        name: ${JSON.stringify(baseFileName)},
+        module: E${baseFileName}_Module,
+        source: E${baseFileName}_Source,
+        description: E${baseFileName}_Module.description,
+      })`
   })
 
-fs.writeFileSync(
-  path.resolve(__dirname, 'examples-index.js'),
-  `
-const examples = []
-
-${examplesIndex.join('\n')}
-
-export default examples
-  `
-)
+  fs.writeFileSync(path.resolve(__dirname, 'examples-index.js'),
+    `const examples = []
+    ${examplesIndex.join('\n')}
+    export default examples`)
 
 const base = {
   output: {

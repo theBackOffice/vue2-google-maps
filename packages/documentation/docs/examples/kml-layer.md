@@ -1,3 +1,4 @@
+```html
 <body>
   <div id="root">
     <google-map :center="center" :zoom="7" style="width: 100%; height: 500px">
@@ -37,3 +38,4 @@
   </script>
 
 </body>
+```
