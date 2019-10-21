@@ -1,17 +1,9 @@
-## Live example
-
-<eg-base>
-  <eg-kml-layer />
-</eg-base>
-
-## Source code
-
 ```html
 <body>
   <div id="root">
-    <gmap-map :center="center" :zoom="7" style="width: 100%; height: 500px">
-      <google-kml-layer v-for="l in kmlLayers" :url="l.url" :clickable="true"></google-kml-layer>
-    </gmap-map>
+    <google-map :center="center" :zoom="7" style="width: 100%; height: 500px">
+      <google-marker v-for="m in markers" :position="m.position" :clickable="true" :draggable="true" @click="center=m.position"></google-marker>
+    </google-map>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.0/vue.js"></script>
@@ -26,19 +18,27 @@
       installComponents: false,
     });
 
-    document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('DOMContentLoaded', function() {
       Vue.component('google-map', VueGoogleMaps.Map);
-      Vue.component('google-kml-layer', VueGoogleMaps.KmlLayer);
+      Vue.component('google-marker', VueGoogleMaps.Marker);
 
       new Vue({
         el: '#root',
         data: {
           center: {
-            lat: -19.257753,
-            lng: 146.823688
+            lat: 10.0,
+            lng: 10.0
           },
-          kmlLayers: [{
-            url: 'https://developers.google.com/maps/documentation/javascript/examples/kml/westcampus.kml'
+          markers: [{
+            position: {
+              lat: 10.0,
+              lng: 10.0
+            }
+          }, {
+            position: {
+              lat: 11.0,
+              lng: 11.0
+            }
           }]
         },
       });

@@ -1,3 +1,12 @@
+
+## Live example
+
+<eg-base>
+  <eg-autocomplete />
+</eg-base>
+
+## Source code
+
 ```html
 <body>
   <div id="root">
@@ -20,10 +29,9 @@
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
-  <script src="vue-google-maps.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue2-google-maps@latest/dist/vue-google-maps.js"></script>
 
   <script>
-
     Vue.use(VueGoogleMaps, {
       load: {
         key: 'AIzaSyDf43lPdwlF98RCBsJOFNKOkoEjkwxb5Sc',
@@ -59,8 +67,6 @@
         }
       });
     });
-
   </script>
-
 </body>
 ```

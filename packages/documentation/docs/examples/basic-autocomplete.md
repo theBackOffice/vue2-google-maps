@@ -1,3 +1,11 @@
+## Live example
+
+<eg-base>
+  <eg-basic-autocomplete />
+</eg-base>
+
+## Source code
+
 ```html
 <body>
   <div id="root">
@@ -12,8 +20,9 @@
       </gmap-autocomplete>
     </label>
     <br />
-    {{latLng.lat}},
-    {{latLng.lng}}
+    <p>Use a place input to see coordinates</p>
+    lat: {{latLng.lat}},
+    lng: {{latLng.lng}}
 
     <div>
       <h2>Options work</h2>
@@ -31,10 +40,9 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
-  <script src="vue-google-maps.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue2-google-maps@latest/dist/vue-google-maps.js"></script>
 
   <script>
-
     Vue.use(VueGoogleMaps, {
       load: {
         key: 'AIzaSyDf43lPdwlF98RCBsJOFNKOkoEjkwxb5Sc',
@@ -47,7 +55,10 @@
         el: '#root',
         data: {
           description: 'Singapore',
-          latLng: {}
+          latLng: {
+            lat: '',
+            lng: '',
+          }
         },
         methods: {
           setDescription(description) {
@@ -64,8 +75,6 @@
         }
       });
     });
-
   </script>
-
 </body>
 ```
