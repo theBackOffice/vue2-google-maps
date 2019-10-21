@@ -5,7 +5,7 @@ module.exports = {
     sidebarDepth: 2,
     nav: [
       {text: 'vue2-google-maps', link: '/'},
-      {text: 'examples', link: '/examples/'},
+      {text: 'code examples', link: '/examples/'},
     ],
     sidebar: {
       '/examples/': [
@@ -13,6 +13,12 @@ module.exports = {
         ['basic-autocomplete', 'Autocomplete basic'],
         ['autocomplete', 'Autocomplete'],
         ['kml-layer', 'Kml layer'],
+        ['map-functions', 'Map functions'],
+        ['marker', 'Marker'],
+        ['basic-marker-cluster', 'Marker cluster'],
+        ['basic-marker-shape', 'Marker shape'],
+        ['place-input', 'Place input'],
+        ['place-default', 'Place default']
       ],
       '/': [
         ['', 'Getting started']

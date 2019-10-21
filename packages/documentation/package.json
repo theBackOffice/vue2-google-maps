@@ -10,6 +10,8 @@
     "build": "vuepress build docs"
   },
   "dependencies": {
+    "vue2-google-maps": "^0.10.7",
     "vuepress": "^1.2.0"
-  }
+  },
+  "devDependencies": {}
 }
