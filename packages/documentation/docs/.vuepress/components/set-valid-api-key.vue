@@ -2,7 +2,7 @@
   <div>
     <h3>For live examples set a valid gmap api key</h3>
     <label for="gmap_key">
-      valid key <input type="text" name="gmap_key" id="gmap_key" v-model="options.key">
+      gmap api key <input type="text" name="gmap_key" id="gmap_key" v-model="options.key">
     </label>
     <br><br>
     <label for="libraries">
