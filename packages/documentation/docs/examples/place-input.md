@@ -1,3 +1,11 @@
+## Live example
+
+<eg-base>
+  <eg-place-input />
+</eg-base>
+
+## Source code
+
 ```html
 <body>
   <div id="root">
