@@ -1,7 +1,9 @@
 
 ## Live example
 
-<eg-autocomplete />
+<eg-base>
+  <eg-autocomplete />
+</eg-base>
 
 ## Source code
 

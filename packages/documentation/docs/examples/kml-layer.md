@@ -1,9 +1,17 @@
+## Live example
+
+<eg-base>
+  <eg-kml-layer />
+</eg-base>
+
+## Source code
+
 ```html
 <body>
   <div id="root">
-    <google-map :center="center" :zoom="7" style="width: 100%; height: 500px">
+    <gmap-map :center="center" :zoom="7" style="width: 100%; height: 500px">
       <google-kml-layer v-for="l in kmlLayers" :url="l.url" :clickable="true"></google-kml-layer>
-    </google-map>
+    </gmap-map>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.0/vue.js"></script>

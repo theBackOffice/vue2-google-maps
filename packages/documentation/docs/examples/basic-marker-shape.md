@@ -1,6 +1,8 @@
 ## Live example
 
-<basic-marker-shape />
+<eg-base>
+  <eg-basic-marker-shape />
+</eg-base>
 
 ## Source code
 

@@ -1,3 +1,11 @@
+## Live example
+
+<eg-base>
+  <eg-map-functions />
+</eg-base>
+
+## Source code
+
 ```html
 <body>
   <div id="root">

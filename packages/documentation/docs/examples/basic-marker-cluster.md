@@ -1,6 +1,8 @@
 ## Live example
 
-<basic-marker-cluster />
+<eg-base>
+  <eg-basic-marker-cluster />
+</eg-base>
 
 ## Source code
 
