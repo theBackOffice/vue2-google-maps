@@ -22,6 +22,7 @@ module.exports = {
         ['status-bar-information', 'Status bar information'],
         ['window-information', 'Window information'],
         ['map-type-id', 'Map type id'],
+        ['overlay', 'Overlay'],
       ],
       '/': [
         ['', 'Getting started']
