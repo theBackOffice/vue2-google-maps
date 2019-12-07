@@ -48,7 +48,7 @@ export default {
       const script = Object.values(scripts).filter((script) => script.src.includes('https://maps.googleapis.com/maps/api/js'))
 
       if (script.length) {
-        script.src = url;
+        script[0].src = url;
       } else {
         const googleMapScript = document.createElement('script')
         googleMapScript.setAttribute('src', url)
@@ -64,7 +64,3 @@ export default {
   },
 }
 </script>
-
-<style lang="css" scoped>
-
-</style>
