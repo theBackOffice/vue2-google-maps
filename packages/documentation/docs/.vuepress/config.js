@@ -21,6 +21,7 @@ module.exports = {
         ['place-default', 'Place default'],
         ['status-bar-information', 'Status bar information'],
         ['window-information', 'Window information'],
+        ['map-type-id', 'Map type id'],
       ],
       '/': [
         ['', 'Getting started']
