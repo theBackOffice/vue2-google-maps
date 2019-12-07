@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "postinstall": "lerna bootstrap",
-    "serve:docs": "lerna run dev"
+    "serve:docs": "cd packages/documentation && npm run dev"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
