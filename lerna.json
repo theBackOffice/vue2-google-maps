@@ -6,13 +6,13 @@
     },
     "bootstrap": {
       "ignore": "",
-      "npmClientArgs": ["--frozen-lockfile"]
+      "npmClientArgs": []
     },
     "version": {
       "allowBranch": "vue2"
     }
   },
-  "npmClient": "yarn",
+  "npmClient": "npm",
   "packages": [
     "packages/*"
   ],
