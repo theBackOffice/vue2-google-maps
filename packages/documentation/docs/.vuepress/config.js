@@ -19,7 +19,8 @@ module.exports = {
         ['basic-marker-shape', 'Marker shape'],
         ['place-input', 'Place input'],
         ['place-default', 'Place default'],
-        ['status-bar-information', 'Status bar information']
+        ['status-bar-information', 'Status bar information'],
+        ['window-information', 'Window information'],
       ],
       '/': [
         ['', 'Getting started']
